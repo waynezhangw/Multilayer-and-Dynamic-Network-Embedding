@@ -1,0 +1,3 @@
+PS D:\data\LINE\windows> ./line -train ./data/20170405_edgeType8-11.csv -output ./result/vec2.txt -binary 0 -size 200 -order 2 -negative 5 -samples 100 -rho 0.025 -threads 20
+
+D:\data\DeepWalk\deepwalk-master>deepwalk --format edgelist --input example_graphs/20170405_edgeType8-11.edgelist --max-memory-data-size 16808000 --number-walks 20 --representation-size 200 --walk-length 10 --window-size 10 --workers 1 --output results/dpwk_vec.txt
