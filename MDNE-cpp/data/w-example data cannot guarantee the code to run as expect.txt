@@ -1,0 +1,2 @@
+In order to get the full result, you will need to make sure the input data is the original data,
+which include around 3.6 million trip data per day and 10626 station info.
