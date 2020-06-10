@@ -5,17 +5,21 @@ For the project that used graph embedding to implement multi-layer and dynamic t
 This project is for data pre-procssing and data preparation for MDNE-py
 
     Input:
-        (1) trip daily records (up to 3.6 million per day, 15 fileds per row, "20170405-Trip-statistics-2CN-duration.csv")
-        (2) Shenzhen station records (10626 stations and their related coordinates, "merge_BusStation改进dbscan加地铁到前面.csv")
-        
+        (1) trip daily records (up to 3.6 million per day, 15 fileds per row, 
+        	"20170405-Trip-statistics-2CN-duration.csv")
+        (2) Shenzhen station records (10626 stations and their related coordinates, 
+        	                              "merge_BusStation改进dbscan加地铁到前面.csv")
+        	                              
     Output:
         (1) regular edgeType in a specific time window (8 fields per row, "20170405_edgeType5-20.csv")
-            8 fields: edgeType-headID-tailID-ODoccurenceCount-averageODTime-ODdurationOccurCount-averageDurationTime-attractiveness
+            8 fields: edgeType-headID-tailID-ODoccurenceCount-averageODTime-ODdurationOccurCount-
+                                                                averageDurationTime-attractiveness
             used for node embedding in regular commute behavior of transit network
         (2) transfer edgeType in a specific time window (5 fields per row, "20170405_transferCount5-20.csv")
             5 fields: transfer_type-transfer_headID-transfer_tailID-transfer_occurCount-defaultZero
             used for node embedding in transfer behavior of transit network
-        (3) count the going out num from current station in a specific time window (2 fields, "20170405_countTransfer5-20.csv")
+        (3) count the going out num from current station in a specific time window (2 fields, 
+        	                                                 "20170405_countTransfer5-20.csv")
             2 fileds: (stationID)-theNumStartFromCurrentID-countAccumulateTimeCost
             used in GRU model
 
