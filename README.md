@@ -47,6 +47,17 @@ This project is to get multi-layer embedding results and dynamic-layer embedding
         output:
             the predicted results and its accuracy  
 
+# Environment
+Visual Studio: 2010
+PyCharm 2019.3.1 (Community Edition)
+ArcGIS: 10.4.1
+
+# Python requirements
+Python 3.7
+networkx >= 1.11
+sklearn >= 0.18.1
+gensim >= 3.4
+torch >=1.0.0
 
 # Acknowledgment
 We built the training framework based on the original MNE model and adapted that to our transit network embedding. We used the algorithm from LINE, Node2Vec, and idea from MNE.
